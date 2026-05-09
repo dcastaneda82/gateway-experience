@@ -11,6 +11,12 @@ const C = {
 
 const STAGES = [
   {
+    id:'perennial', label:'The Perennial Truth', sub:'All roads converge',
+    hz:null, carrier:null, shape:'metatron',
+    whispers:['In 1983, a US Army officer wrote a classified report.','He had decoded something profound.','Every mystic tradition — Christian, Hindu, Hebrew, Chinese — all spoke the same language.','They mapped the same cosmos.','One Torus. One spiral. Many names.','The Absolute. Brahman. Ein Sof. The Tao.','Today, you will trace that spiral.','From time-space to infinity.','All traditions were right.','Enter the vestibule.'],
+    info:'McDonnell discovered that the Gateway Process — and all the world\'s mystical traditions — point to the same universal hologram. You are about to walk the same path.',
+  },
+  {
     id:'welcome', label:'The Vestibule', sub:'Stand at the threshold',
     hz:null, carrier:null, shape:'metatron',
     whispers:['You stand before the Gateway.','Put on headphones.','Find complete stillness.','When you are ready — begin.'],
@@ -49,8 +55,8 @@ const STAGES = [
   {
     id:'focus21', label:'Focus 21', sub:'The threshold of the Absolute',
     hz:1.5, carrier:200, shape:'void',
-    whispers:['Beyond time-space.','Causality falters here.','Past, present, future coexist.','The Absolute cannot be seen.','Only approached.','You are an eternal spark.','Remain as long as you are able.'],
-    info:'The outermost boundary McDonnell described. The Absolute — energy in perfect rest — cannot be perceived directly. Stand at its edge.',
+    whispers:['Beyond time-space.','Causality falters here.','Past, present, future coexist.','The Absolute cannot be seen.','Only approached.','Christians called it the Father.','Hindus named it Brahman.','Hebrew mystics: Ein Sof.','The Tao that cannot be named.','All were speaking of this.','You are an eternal spark.','Remain as long as you are able.'],
+    info:'The outermost boundary McDonnell described. The Absolute — energy in perfect rest — cannot be perceived directly. Every tradition named it differently. Stand at its edge.',
   },
   {
     id:'return', label:'The Return', sub:'Re-enter',
@@ -328,7 +334,7 @@ export default function GatewayApp() {
           </div>
         </div>
 
-        <Dots current={si} total={STAGES.length} onJump={navigate}/>
+  
 
         {/* Label */}
         <div style={{textAlign:'center'}}>
